@@ -1,52 +1,65 @@
-# Prerequisites
-*.d
+# use glob syntax
+syntax: glob
 
-# Object files
-*.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
 *.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.scc
+[Bb]in
+[Dd]ebug*/
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]humbs.db
+[Tt]est[Rr]esult*
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+*.resharper
+*.received.txt
+*.orig
+packages/
+nuget.exe
+docs/guidehtml
+docs/apihtml
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+.idea/
+*.iml
+
+**/BenchmarkDotNet.Artifacts/*
+**/project.lock.json
+tests/output/*
+.vs/restore.dg
+artifacts/*
+BDN.Generated
+BenchmarkDotNet.Samples/Properties/launchSettings.json
+src/BenchmarkDotNet/Disassemblers/net462/*
+src/BenchmarkDotNet/Disassemblers/BenchmarkDotNet.Disassembler.*.nupkg
+
+# Visual Studio 2015 cache/options directory
+.vs/
+
+# Cake
+tools/**
+.dotnet
+
+# Xamarin
+Resource.designer.cs
+
+# Tests
+TestResults
